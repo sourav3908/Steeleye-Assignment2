@@ -65,29 +65,3 @@ The function should find the appropriate positions in `htmlContent` based on the
 In addition to implementing the `highlightHTMLContent` function, you are encouraged to write unit tests using Jest. Aim to cover as many scenarios as possible to ensure the correctness of your solution.
 
 
-## Answer
-
-As per the task, I have made highlightHTMLContent.js file which exports highlightHTMLContent(htmlContent, plainText, plainTextPositions).
-This file contains helper functions :
-<b>preprocessPositions <b> 
-This function preprocesses the plainTextPositions array to avoid irregular, overlapping, or invalid positions. It ensures that the provided positions are valid and do not result in incorrect highlights.
-
-<b>handleChecks <b> 
-This function performs checks on the input arguments htmlContent, plainText, and plainTextPositions to avoid unknown errors during processing. It ensures that the input data is valid and handles any unexpected scenarios.
-
-<b>SingleHighlightHTMLContent <b> 
-This function takes a single object at a time from plainTextPositions and highlights the corresponding portion of htmlContent based on the provided start and end positions.
-
-<b>highlightHTMLContent <b> 
-This is the main driver function and calls other helper functions to solve the task
-
-### Testing
-```javascript
-    # Install dependencies
-    npm install
-
-    # Run the tests
-    npm test
-```
-To test the highlightHTMLContent function, you can use the provided test.js file with the Jest testing framework. The test file contains test cases that verify the correctness of the function under different scenarios.
-Ensure that all the test cases pass successfully before using the function in your project.
